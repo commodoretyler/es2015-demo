@@ -10,6 +10,8 @@ const modified = Array.from(frameworks, (framework) => {
   return framework + '.js';
 });
 
+console.log(modified);
+
 /*
 const timeout = setTimeout( () => {
   console.log('timeout fired');
@@ -32,4 +34,9 @@ for (const f of iterableFrameworks) {
   //console.log(f);
 }
 
-console.log(modified);
+const finder = Array.from(frameworks).find( (f) => f === 'Angular');
+
+//console.log(Array.from(iterableFrameworks.keys()));
+//console.log(Array.from(iterableFrameworks.entries()));
+//console.log(finder);
+
